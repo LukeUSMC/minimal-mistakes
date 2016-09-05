@@ -1,0 +1,20 @@
+---
+layout: archive
+title: "Lemmy Technical Series"
+header:
+  teaser: protov1_teaser.jpg
+permalink: /technical/
+author_profile: true
+excerpt: "The Lemmy Technical Series is the home for all things technical related to the Lemmy Light Project. Ionic, Particle, AngularJS, etc will all be here."
+---
+The Lemmy Technical Series is the home for all things technical related to the Lemmy Light Project. Ionic, Particle, AngularJS, etc will all be here. I will be detailing the mobile app (Ionic and Particle), the hardware (Building a Lemmy) and the cloud components that will glue it all together (Lemmy gets a Cloud).  Stayed tuned for updates.
+
+{% include base_path %}
+
+<h2 class="archive__subtitle">{{ "Lemmy Goes Mobile" }}</h2>
+
+<div class="grid__wrapper">
+  {% for post in site.particleionic %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>

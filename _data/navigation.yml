@@ -1,7 +1,16 @@
 # main links links
 main:
-  - title: "Sample Navigation Link"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
+  - title: "Lemmy Progress"
+    url: /progress/
 
-  - title: "Sample Navigation Link 2"
-    url: /
+  - title: "Lemmy Tech Series"
+    url: /technical/
+
+  - title: "Categories"
+    url: /categories/
+
+  - title: "About Me"
+    url: /about/
+
+  - title: "Tags"
+    url: /tags/

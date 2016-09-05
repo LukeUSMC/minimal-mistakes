@@ -1,14 +1,46 @@
 ---
-layout: archive
-author_profile: true
+title: "Welcome"
+layout: splash
+date: 2016-03-23T11:48:41-04:00
+header:
+  overlay_image: splash_hires.jpg
+  cta_label: "<i class='fa fa-twitter'></i> Follow Me for Updates"
+  cta_url: "https://www.twitter.com/LucasFigg"
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+excerpt: "Lemmy Light Progress and Technical Ramblings of Lucas Figg."
+intro:
+  - excerpt: '**Featured Posts and Categories**'
+feature_row:
+  - image_path: workbench-th.jpg
+    alt: "workbench image"
+    title: "Project Progress"
+    excerpt: "Follow along and stay up-to-date on the latest additions to the project."
+    url: /progress
+    btn_label: "Read Now"
+    btn_class: "btn--inverse"
+  - image_path: combined_teaser.jpg
+    alt: "combined image"
+    title: "Particle & Ionic Series"
+    excerpt: "A series of posts dedicated to using the Ionic Framework and the Particle Cloud API."
+    url: "/particleionic"
+    btn_label: "Read Now"
+    btn_class: "btn--inverse"
+  - image_path: nebula_teaser.jpg
+    title: "Stay Tuned"
+    excerpt: "I'm not quite sure what the last 'feature' will be so until then, here is a kickass photo of the Carina Nebula."
 ---
+
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}
 
 {% include base_path %}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h2 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% for post in paginator.posts %}
-  {% include archive-single.html %}
+  {% include archive-single.html type="list" %}
 {% endfor %}
+
 
 {% include paginator.html %}
